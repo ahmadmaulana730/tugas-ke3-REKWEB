@@ -19,8 +19,8 @@
 
     </div>
 
-    <div class="row mt-3 mb-3s">
-        <div class="col md-6">
+    <div class="row mt-3 mb-3">
+        <div class="col-md-6">
             <form action="" method="post">
 
                 <div class="input-group ">
@@ -41,6 +41,8 @@
                 </div>
             <?php endif; ?>
             <ul class="list-group">
+
+
                 <?php foreach ($mahasiswa as $mhs) : ?>
                     <li class="list-group-item"><?= $mhs['nama']; ?>
                         <a href="<?= base_url(); ?>mahasiswa/hapus/<?= $mhs['id']; ?>" class="badge badge-danger float-right" onclick="return confirm('yakin'); ">hapus</a>
